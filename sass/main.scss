@@ -11,8 +11,31 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  font-size: 24px;
+}
+
 a {
   color: $active-color;
+  
+  &.btn {
+    padding: 20px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    
+    &-primary {
+      background-color: $active-color;
+      border-bottom: 5px solid darken($active-color, 10%);
+      
+      &:hover {
+        background-color: lighten($active-color, 2%);
+      }
+    }
+  }
 }
 
 .top-nav {
@@ -110,6 +133,25 @@ a {
         text-transform: uppercase;
         font-weight: 400;
       }
+    }
+  }
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.directions {
+  margin-top: 80px;
+  
+  &-block {
+    background-color: $white;
+    height: 220px;
+    text-align: center;
+    
+    h3 {
+      color: $active-color;
+      padding: 20px 34px;
     }
   }
 }
