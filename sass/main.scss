@@ -227,7 +227,12 @@ a {
         padding: 7px;
         
         &:hover {
-          background-color: rgba($white, 0.9);
+          background-color: rgba($white, 0.3);
+        }
+        
+        img {
+          width: 100%;
+          height: auto;
         }
       }
     }
