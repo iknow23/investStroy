@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*  Обозначаю цвет фона всего сайта  */
+.slick-active {
+  outline: none; }
+
 html {
   font-size: 14px; }
 
@@ -101,7 +104,11 @@ a {
   .directions-block {
     background-color: #ffffff;
     height: 220px;
-    text-align: center; }
+    text-align: center;
+    margin: 0 15px;
+    padding: 10px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain; }
     .directions-block h3 {
-      color: #009adf;
-      padding: 20px 34px; }
+      color: #009adf; }
