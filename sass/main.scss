@@ -1,5 +1,6 @@
 @import "color.scss";
 @import "reset.scss";
+@import "fontello.scss";
 
 html {
   font-size: 14px;
@@ -41,15 +42,31 @@ a {
 }
 
 .top-nav {
+  position: relative;
   background-color: $white;
   padding: 15px;
+  
+  &_btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: -50px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
   
   &_menu {
     list-style: none;
     padding: 0;
     display: flex;
-  
-  
+
     li {
       margin-right: 45px;
 
@@ -82,6 +99,26 @@ a {
 
 .left-sidebar {
   margin-top: 40px;
+  
+  &_btn {
+    position: relative;
+    background-color: $white;
+    padding: 15px;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-bottom: 2px solid $dark;
+      border-right: 2px solid $dark;
+      transform: rotate(45deg);
+    }
+  }
   
   &_menu {
     background-color: $white;
@@ -127,6 +164,11 @@ a {
   &_object {
     margin-top: 30px;
     background-color: $white;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
     
     &-description {
       padding: 30px;
@@ -238,3 +280,5 @@ a {
     }
   }
 }
+
+@import "media.scss";

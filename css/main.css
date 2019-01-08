@@ -3,6 +3,66 @@
 .slick-active {
   outline: none; }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?55381909");
+  src: url("../fonts/fontello.eot?55381909#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?55381909") format("woff2"), url("../fonts/fontello.woff?55381909") format("woff"), url("../fonts/fontello.ttf?55381909") format("truetype"), url("../fonts/fontello.svg?55381909#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.svg?55381909#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-facebook:before {
+  content: '\f09a'; }
+
+/* '' */
+.icon-menu:before {
+  content: '\f0c9'; }
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d'; }
+
+/* '' */
+.icon-vkontakte:before {
+  content: '\f189'; }
+
+/* '' */
 html {
   font-size: 14px; }
 
@@ -33,8 +93,21 @@ a {
         background-color: #00a1e9; }
 
 .top-nav {
+  position: relative;
   background-color: #ffffff;
   padding: 15px; }
+  .top-nav_btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: -50px; }
+    .top-nav_btn:hover {
+      cursor: pointer; }
   .top-nav_menu {
     list-style: none;
     padding: 0;
@@ -66,6 +139,23 @@ a {
 
 .left-sidebar {
   margin-top: 40px; }
+  .left-sidebar_btn {
+    position: relative;
+    background-color: #ffffff;
+    padding: 15px; }
+    .left-sidebar_btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-bottom: 2px solid #131313;
+      border-right: 2px solid #131313;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
   .left-sidebar_menu {
     background-color: #ffffff;
     list-style: none;
@@ -91,6 +181,9 @@ a {
   .left-sidebar_object {
     margin-top: 30px;
     background-color: #ffffff; }
+    .left-sidebar_object img {
+      width: 100%;
+      height: auto; }
     .left-sidebar_object-description {
       padding: 30px; }
       .left-sidebar_object-description h3 {
@@ -162,3 +255,23 @@ a {
         .footer-social-links li a img {
           width: 100%;
           height: auto; }
+
+/*  Адаптив для сайта  */
+@media (max-width: 480px) {
+  .top-nav_btn {
+    display: block; }
+  .top-nav_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none; }
+    .top-nav_menu__active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 0; }
+    .top-nav_menu li {
+      line-height: 2; }
+      .top-nav_menu li a::after {
+        display: none; } }

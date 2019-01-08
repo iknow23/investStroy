@@ -31,6 +31,9 @@
             <img src="img/logo.jpg" width="200" height="60" alt="Логотип компании Созидант">
           </div>
           <div class="col-md-auto">
+            <button class="top-nav_btn">
+              <i class="icon-menu"></i>
+            </button>
             <ul class="top-nav_menu">
               <li><a href="#">Главная</a></li>
               <li><a href="#">О компании</a></li>
@@ -46,6 +49,9 @@
       <div class="row">
         <div class="col-md-4">
           <div class="left-sidebar">
+            <div class="left-sidebar_btn">
+              Категории
+            </div>
             <ul class="left-sidebar_menu">
               <li><a href="#">Земля</a></li>
               <li><a href="#">Жилая недвижимость</a></li>
@@ -176,6 +182,17 @@
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 1
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        var menuBtn = $('.top-nav_btn');
+        var menu = $('.top-nav_menu');
+        
+        menuBtn.on('click', function(event) {
+          event.preventDefault();
+          menu.toggleClass('top-nav_menu__active');
+        });
       });
     </script>
 </body>
