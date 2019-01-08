@@ -1,7 +1,10 @@
 /*  Адаптив для сайта  */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+
   .top-nav {
-    
     &_btn {
       display: block;
     }
@@ -14,17 +17,116 @@
         display: flex;
         margin-bottom: 0;
       }
-      
+
       li {
         line-height: 2;
 
         a {
-          
+
           &::after {
             display: none;
           }
         }
       }
+    }
+  }
+  
+  .left-sidebar {
+    &_btn {
+      display: block;
+    }
+    
+    &_menu {
+      display: none;
+      
+      &__active {
+        display: block;
+      }
+    }
+    
+    &_object {
+      display: none;
+    }
+  }
+  
+  .copy {
+	text-align: center;
+    
+    small {
+      display: block;
+      margin: 36px auto;
+    }
+  }
+  
+  .footer {
+    &-contacts {
+      text-align: left;
+    }
+    
+    &-social-links {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+
+  .top-nav {
+    &_btn {
+      display: block;
+    }
+    
+    &_menu {
+      display: none;
+      
+      &__active {
+        display: flex;
+        margin-bottom: 0;
+        justify-content: space-around;
+      }
+
+      li {
+        margin-right: 0;
+        line-height: 2;
+
+        a {
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  
+  .left-sidebar {
+    &_btn {
+      display: block;
+    }
+    
+    &_menu {
+      display: none;
+      
+      &__active {
+        display: block;
+      }
+    }
+    
+    &_object {
+      display: none;
+    }
+  }
+  
+  .footer {
+    &-contacts {
+      text-align: left;
+    }
+    
+    &-social-links {
+      text-align: left;
     }
   }
 }

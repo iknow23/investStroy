@@ -3,7 +3,7 @@
 @import "fontello.scss";
 
 html {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
   background-color: $body-bg;
   color: $dark;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 h2 {
@@ -98,12 +99,17 @@ a {
 }
 
 .left-sidebar {
-  margin-top: 40px;
+  margin-top: 4rem;
   
   &_btn {
+    display: none;
     position: relative;
     background-color: $white;
     padding: 15px;
+    
+    &:hover {
+      cursor: pointer;
+    }
     
     &::after {
       content: '';
