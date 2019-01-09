@@ -96,7 +96,7 @@ a {
 .top-nav {
   position: relative;
   background-color: #ffffff;
-  padding: 15px; }
+  padding: 15px 34px; }
   .top-nav_btn {
     display: none;
     width: 30px;
@@ -117,6 +117,8 @@ a {
     display: flex; }
     .top-nav_menu li {
       margin-right: 45px; }
+      .top-nav_menu li:last-child {
+        margin-right: 0; }
       .top-nav_menu li a {
         text-transform: uppercase;
         text-decoration: none;
@@ -269,6 +271,30 @@ a {
     margin-bottom: 15px; }
   .team p {
     margin-bottom: 40px; }
+
+.contacts {
+  font-size: 16px; }
+  .contacts-address {
+    display: block;
+    line-height: 2;
+    margin-bottom: 20px; }
+  .contacts-btn {
+    margin-top: 36px; }
+  .contacts-social-links ul {
+    list-style: none;
+    margin-top: 36px;
+    padding: 0; }
+    .contacts-social-links ul li {
+      display: inline-block; }
+      .contacts-social-links ul li a {
+        display: inline-block;
+        background-color: #009adf;
+        color: #ffffff;
+        margin-right: 15px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        border-radius: 50%; }
 
 /*  Адаптив для сайта  */
 @media (max-width: 767px) {
