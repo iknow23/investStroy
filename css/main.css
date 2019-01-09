@@ -195,7 +195,8 @@ a {
         font-weight: 400; }
 
 .content {
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 76px; }
 
 .directions {
   margin-top: 80px; }
@@ -259,6 +260,15 @@ a {
         .footer-social-links li a img {
           width: 100%;
           height: auto; }
+
+.team {
+  text-align: center; }
+  .team h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  .team p {
+    margin-bottom: 40px; }
 
 /*  Адаптив для сайта  */
 @media (max-width: 767px) {
@@ -330,3 +340,14 @@ a {
     text-align: left; }
   .footer-social-links {
     text-align: left; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .top-nav_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .top-nav_menu li {
+      margin: 0; } }

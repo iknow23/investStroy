@@ -189,6 +189,7 @@ a {
 
 .content {
   margin-top: 40px;
+  margin-bottom: 76px;
 }
 
 .directions {
@@ -284,6 +285,20 @@ a {
         }
       }
     }
+  }
+}
+
+.team {
+  text-align: center;
+  
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 40px;
   }
 }
 
