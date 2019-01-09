@@ -296,6 +296,28 @@ a {
         text-align: center;
         border-radius: 50%; }
 
+.organization-card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  min-height: 42rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .organization-card:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+            box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1); }
+  .organization-card a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px; }
+  .organization-card small {
+    display: block;
+    color: rgba(19, 19, 19, 0.5);
+    line-height: 1.5; }
+  .organization-card p {
+    line-height: 22px; }
+
 /*  Адаптив для сайта  */
 @media (max-width: 767px) {
   html {

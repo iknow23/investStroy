@@ -344,4 +344,35 @@ a {
   }
 }
 
+.organization {
+  &-card {
+    background-color: $white;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    min-height: 42rem;
+    transition: all 0.2s;
+    
+    &:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+    }
+    
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 20px;
+    }
+    
+    small {
+      display: block;
+      color: $inn;
+      line-height: 1.5;
+    }
+    
+    p {
+      line-height: 22px;
+    }
+  }
+}
+
 @import "media.scss";
