@@ -377,6 +377,11 @@ a {
 
 .calc {
   
+  h4 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
   &-programms {
     display: flex;
     flex-wrap: wrap;
@@ -464,6 +469,7 @@ a {
   
   &-summ {
     &_invest {
+      margin-top: 30px;
       
       &_label {
         margin-right: 10px;
@@ -483,7 +489,7 @@ a {
     display: inline-block;
     text-align: center;
     background-color: $white;
-    padding: 10px 28px;
+    padding: 10px;
     margin-right: 40px;
     
     strong {
@@ -498,8 +504,11 @@ a {
   }
   
   &-monthly {
+    margin-top: 20px;
     display: inline-block;
     text-align: center;
+    padding: 10px;
+    margin-right: 40px;
     font-size: 18px;
     
     small {
