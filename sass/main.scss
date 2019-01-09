@@ -375,4 +375,92 @@ a {
   }
 }
 
+.calc {
+  
+  &-programms {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &-legal {
+    font-size: 12px;
+  }
+  
+  &-radio {
+    flex-basis: 50%;
+    
+    &:last-child {
+      flex-basis: 100%;
+      display: flex;
+    }
+    
+    label {
+      display: inline-block;
+      margin-bottom: 20px;
+      
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+        background-color: $white;
+        border: 6px solid $white;
+        border-radius: 50%;
+        transition: all 0.2s;
+      }
+      
+      &:hover {
+        cursor: pointer;
+      }
+      
+      small {
+        display: block;
+        margin-left: 28px;
+        font-size: 10px;
+        opacity: 0.5;
+      }
+    }
+    
+    input[type="radio"] {
+      display: none;
+      
+      &:checked {
+        &+label::before {
+          background-color: $active-color;
+          border: 6px solid $white;
+        }
+      }
+    }
+  }
+  
+  &-popular {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 15px;
+    height: 25px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $active-color;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      margin-top: -6px;
+      width: 6px;
+      height: 13px;
+      border: 6px solid transparent;
+      border-right: 6px solid $active-color;
+    }
+  }
+}
+
 @import "media.scss";

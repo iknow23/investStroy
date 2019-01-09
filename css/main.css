@@ -318,6 +318,84 @@ a {
   .organization-card p {
     line-height: 22px; }
 
+.calc-programms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.calc-legal {
+  font-size: 12px; }
+
+.calc-radio {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+  .calc-radio:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .calc-radio label {
+    display: inline-block;
+    margin-bottom: 20px; }
+    .calc-radio label::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+              box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+      background-color: #ffffff;
+      border: 6px solid #ffffff;
+      border-radius: 50%;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+    .calc-radio label:hover {
+      cursor: pointer; }
+    .calc-radio label small {
+      display: block;
+      margin-left: 28px;
+      font-size: 10px;
+      opacity: 0.5; }
+  .calc-radio input[type="radio"] {
+    display: none; }
+    .calc-radio input[type="radio"]:checked + label::before {
+      background-color: #009adf;
+      border: 6px solid #ffffff; }
+
+.calc-popular {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 15px;
+  height: 25px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #009adf; }
+  .calc-popular::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -6px;
+    width: 6px;
+    height: 13px;
+    border: 6px solid transparent;
+    border-right: 6px solid #009adf; }
+
 /*  Адаптив для сайта  */
 @media (max-width: 767px) {
   html {
