@@ -24,7 +24,6 @@ a {
   
   &.btn {
     padding: 20px 30px;
-    display: inline-block;
     border-radius: 5px;
     color: $white;
     text-decoration: none;
@@ -513,6 +512,49 @@ a {
     
     small {
       font-size: 10px;
+      text-align: center;
+    }
+  }
+}
+
+.object {
+  &-card {
+    background-color: $white;
+    margin-bottom: 30px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    &_text {
+      padding: 30px;
+    }
+    
+    &_title {
+      display: block;
+      font-size: 16px;
+      color: $active-color;
+      text-decoration: none;
+    }
+    
+    &_price {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      color: $active-color;
+      text-align: center;
+    }
+    
+    &_btn {
+      display: block;
+      text-align: center;
+    }
+    
+    &_more {
+      display: block;
+      color: $dark;
+      margin-top: 30px;
       text-align: center;
     }
   }

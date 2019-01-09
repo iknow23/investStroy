@@ -81,7 +81,6 @@ a {
   color: #009adf; }
   a.btn {
     padding: 20px 30px;
-    display: inline-block;
     border-radius: 5px;
     color: #ffffff;
     text-decoration: none;
@@ -433,6 +432,34 @@ a {
   font-size: 18px; }
   .calc-monthly small {
     font-size: 10px;
+    text-align: center; }
+
+.object-card {
+  background-color: #ffffff;
+  margin-bottom: 30px; }
+  .object-card img {
+    width: 100%;
+    height: auto; }
+  .object-card_text {
+    padding: 30px; }
+  .object-card_title {
+    display: block;
+    font-size: 16px;
+    color: #009adf;
+    text-decoration: none; }
+  .object-card_price {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #009adf;
+    text-align: center; }
+  .object-card_btn {
+    display: block;
+    text-align: center; }
+  .object-card_more {
+    display: block;
+    color: #131313;
+    margin-top: 30px;
     text-align: center; }
 
 /*  Адаптив для сайта  */
